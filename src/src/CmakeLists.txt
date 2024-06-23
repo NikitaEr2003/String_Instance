@@ -1,0 +1,8 @@
+
+set(SOURCES main.cpp Counter.cpp MyString.cpp)
+
+add_executable(SoloStr ${SOURCES})
+
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static -static-libgcc -static-libstdc++")
+
+target_include_directories(SoloStr PRIVATE ../include)
